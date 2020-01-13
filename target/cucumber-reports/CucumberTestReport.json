@@ -1,0 +1,160 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# new feature"
+      },
+      {
+        "line": 2,
+        "value": "# Tags: optional"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 13770743699,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Open Website http://www.way2automation.com/angularjs-protractor/banking/#/customer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://www.way2automation.com/angularjs-protractor/banking/#/customer",
+                  "offset": 13
+                }
+              ],
+              "location": "CommonTest.user_already_on_home_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Customer transaction successfully",
+        "description": "",
+        "id": "customer-transaction;customer-transaction-successfully;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6396654901,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I login successfully with as Harry Potter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Harry Potter",
+                  "offset": 29
+                }
+              ],
+              "location": "CommonTest.loginSuccessfully(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7280362700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I deposit successfully with amount as 4000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4000",
+                  "offset": 38
+                }
+              ],
+              "location": "CommonTest.depositSuccessfully(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15481600500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I withdrawal successfully with amount as 2000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2000",
+                  "offset": 41
+                }
+              ],
+              "location": "CommonTest.withdrawalSucessfully(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4119908100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click transactions tab",
+            "match": {
+              "location": "TransactionTest.clickTransactionTab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2000368200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I verify transactions successfully with deposit amount as 4000 and withdrawal amount as 2000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4000",
+                  "offset": 58
+                },
+                {
+                  "val": "2000",
+                  "offset": 88
+                }
+              ],
+              "location": "TransactionTest.verifyTransactionsSuccessfully(String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Customer transaction",
+    "description": "",
+    "id": "customer-transaction",
+    "keyword": "Feature",
+    "uri": "src/test/java/features/bankcustomer/transactions.feature"
+  }
+]
